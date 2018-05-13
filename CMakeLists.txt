@@ -19,10 +19,10 @@ set_target_properties(kkmeans PROPERTIES
 )
 
 install(TARGETS kkmeans RUNTIME DESTINATION bin)
-install(FILES tests/kkmeans_ex.txt DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES tests/stellar.txt DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES tests/kkmeans_ex.bmp DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES tests/stellar.bmp DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(FILES tests/kkmeans_ex.txt DESTINATION local/${CMAKE_PROJECT_NAME})
+install(FILES tests/stellar.txt DESTINATION local/${CMAKE_PROJECT_NAME})
+install(FILES tests/kkmeans_ex.bmp DESTINATION local/${CMAKE_PROJECT_NAME})
+install(FILES tests/stellar.bmp DESTINATION local/${CMAKE_PROJECT_NAME})
 
 set(CPACK_GENERATOR DEB)
 
