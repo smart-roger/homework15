@@ -3,6 +3,7 @@ compiler: clang
 
 before_script:  
   - echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update
   - sudo apt-get install libopenblas-dev -y
   - sudo apt-get install libdlib-dev -y
 
