@@ -15,7 +15,7 @@ typedef radial_basis_kernel<sample_type> kernel_type;
 int main(int argc, char** argv)
 {
     try{
-        if(0 == argc){
+        if(argc<2){
             std::cout << "usage kkmeans <num_clusters> <draw>" << std::endl;
             return -1;
         }
@@ -28,7 +28,7 @@ int main(int argc, char** argv)
 
         bool drawing (false);
         double minX, minY, maxX, maxY;
-        if( (argc>=2) && ("draw" == std::string(argv[2])) )
+        if( (argc>2) && ("draw" == std::string(argv[2])) )
             drawing = true;
 
         kcentroid<kernel_type> kc(kernel_type(0.1),0.01, 8);
