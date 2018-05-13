@@ -18,9 +18,9 @@ set_target_properties(kkmeans PROPERTIES
 	COMPILE_OPTIONS -Wpedantic -Wall -Wextra
 )
 
-install(TARGETS kkmeans RUNTIME DESTINATION bin)
-install(FILES tests/kkmeans_ex.txt DESTINATION ${CMAKE_INSTALL_PREFIX}/${MYTARGET_NAME})
-install(FILES tests/stellar.txt DESTINATION ${CMAKE_INSTALL_PREFIX}/${MYTARGET_NAME})
+install(TARGETS kkmeans RUNTIME DESTINATION .)
+install(FILES tests/kkmeans_ex.txt DESTINATION .)
+install(FILES tests/stellar.txt DESTINATION .)
 
 
 set(CPACK_GENERATOR DEB)
