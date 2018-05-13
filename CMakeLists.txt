@@ -19,6 +19,9 @@ set_target_properties(kkmeans PROPERTIES
 )
 
 install(TARGETS kkmeans RUNTIME DESTINATION bin)
+install(FILES tests/kkmeans_ex.txt RUNTIME DESTINATION bin)
+install(FILES tests/stellar.txt RUNTIME DESTINATION bin)
+
 
 set(CPACK_GENERATOR DEB)
 
