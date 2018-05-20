@@ -31,7 +31,7 @@ int main(int argc, char** argv)
         if( (argc>2) && ("draw" == std::string(argv[2])) )
             drawing = true;
 
-        kcentroid<kernel_type> kc(kernel_type(0.1),0.01, 8);
+        kcentroid<kernel_type> kc(kernel_type(0.1),0.01, num_clusters);
         kkmeans<kernel_type> test(kc);
 
         sample_type m;
